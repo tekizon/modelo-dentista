@@ -35,7 +35,7 @@ export function Header(){
                     </ActiveLink>
                 </nav>
                 <a className={styles.readyButton} type="button" href="https://api.whatsapp.com/send?phone=5519996255358&text=Opa%20tudo%20bem%3F%20Tenho%20interesse%20no%20site!%20Me%20passa%20mais%20informa%C3%A7%C3%B5es.">
-                    QUERO EVOLUIR!
+                    AGENDAR UMA CONSULTA!
                 </a>
             </div>
         </header>
