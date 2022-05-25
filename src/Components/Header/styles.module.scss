@@ -1,0 +1,112 @@
+.headerContainer{
+    height: 6rem;
+    border-bottom: 1px solid var(--gray-200);
+    background: var(--bg-500);
+}
+
+.headerContent{
+    max-width: 1420px;
+    height: 6rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+
+    img{
+        cursor: pointer;
+        max-width: 250px;
+    }
+    nav{
+        margin-left: 5rem;
+        height: 6rem;
+
+        a{
+            display: inline-block;
+            position: relative;
+            padding: 0 0.5rem;
+            height: 6rem;
+            line-height: 6rem;
+            color: var(--primary-color);
+            transition: color 0.2s;
+
+            & + a{
+                margin-left: 2rem;
+            }
+
+            &:hover{
+                color: var(--secondary-color);
+            }
+
+            &.active{
+                color: var(--secondary-color);
+                font-weight: bold;
+            }
+        }
+    }
+}
+.readyButton{
+    margin-left: auto;
+    height: 3rem;
+    border-radius: 3rem;
+    background: var(--secondary-color);
+    border: 0;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: bold;
+    transition: filter 0.2s;
+
+    &:hover{
+        filter: brightness(1.1);
+    }
+}
+
+@media (max-width: 900px){
+    .headerContainer{
+        height: 9rem;
+        padding: 0.5rem 0;
+    }
+
+    .headerContent{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+
+        nav{
+            display: block;
+            margin: 0 auto;
+            height: 3rem;
+
+            a{
+                height: 3rem;
+                line-height: 3rem;
+
+                & + a{
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .readyButton{
+        display: none;
+    }
+}
+
+@media (max-width: 308px){
+    .headerContent{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.5rem;
+
+        nav{
+            a{
+                & + a{
+                    margin-left: 0.4rem;
+                }
+            }
+        }
+    }
+}
