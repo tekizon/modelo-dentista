@@ -48,7 +48,7 @@ export default function Home({ content }: ContentProps) {
         <div className={styles.containerHeader}>
           <section className={styles.ctaText}>
             <h1>Bem-vindo ao site da melhor dentista de Itapira</h1>
-            <span>Prazer, sou a Doutora Verônica, formada em odontologia, e atendo na região de Itapira...</span>
+            <span>Prazer, sou a Dra Verônica, formada em odontologia, e atendo na região de Itapira...</span>
             <a href={content.buttonPart1}>
               <button>
                 AGENDAR UMA CONSULTA!
